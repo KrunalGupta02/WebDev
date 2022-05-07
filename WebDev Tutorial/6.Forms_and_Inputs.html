@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Inputs</title>
+</head>
+<body>
+    <h3>HTML Forms </h3>
+
+    <form action="backend.php" autocomplete="on">
+
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="Myname" id="name" placeholder="Enter your name">             
+        </div>
+        <br>
+
+        <div>
+            <label for="role">Role</label>
+            <input type="text" name="Myrole" id="role">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="range">
+        </div>
+
+        <div>
+            Email:<input type="email" name="Myemail" placeholder="Enter your email">
+        </div>
+
+        <br>
+
+        <div>
+            Date:<input type="date" name="Mydate">
+        </div>
+
+        <br>
+
+        <div>
+            Current Date and Time: <input type="datetime-local">
+        </div>
+
+        <br>
+
+        <div>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31">
+
+        <br>
+
+        <br>
+
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+        </div>
+        <br>
+
+        <div>
+            Bonus:<input type="number" name="Mybonus">
+        </div>
+
+        <br>
+
+        <div>
+            Are you eligible:<input type="checkbox" name="Myeligibility" checked>
+        </div>
+
+        <br>
+        
+        <div>
+            Gender:<br> Male <input type="radio" name="Mygender">
+            Female <input type="radio" name="Mygender">
+            Others <input type="radio" name="Mygender">
+        </div>
+
+        <br>
+
+        <div>
+            Write about yourself:<br> <textarea name="Mytext" cols="90" rows="10" placeholder="Enter text here only"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="car">Car<br></label>
+            <select name="Mycar" id="car">
+            <option value="Option">Select your option</option>
+            <option value="ind">Indica</option>
+            <option value="swf" selected>Swift Dezire</option>
+            <option value="rr">Royles Royal</option>
+        </select>
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="cars">Choose a car:<br></label>
+            <select name="cars" id="cars" multiple>
+            <option value="Option">Select your option</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        <!-- Hold down the Ctrl button for multiple selection -->
+        </select>
+        </div>
+
+        <br>
+
+        <div>
+            Choose your favourite color: <input type="color" value="#ff0000">
+        </div>
+
+        <br>
+  
+        <div>
+            File: <input type="file" accept="image/png , image/jpeg">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="user">User Name</label>
+            <input type="text" name="User Name" id="user" maxlength="10" required placeholder="Enter your UserID">
+
+            <br> 
+
+            <label for="pwd">Password</label>
+            <input type="password" name="password" id="pwd" minlength="8" maxlength="16" required placeholder="Enter your Password">
+        </div>
+
+        <br>
+
+        <div>
+            <form action="/action_page.php">
+                <fieldset>
+                  <legend>Personalia:</legend>
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                  <input type="submit" value="Submit">
+                </fieldset>
+              </form>
+        </div>
+        <br>
+
+        <button type="button" onclick="alert('Hello Developer')">Click Me!</button>
+        
+        <br>
+        
+        <div>
+            <input type="submit" value="Submit Now" id="submit">
+            <input type="reset" value="Reset Now" id="reset">
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.navbar{
+    background-color: rgb(37, 162, 194);
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.navbar ul{
+    overflow: auto;             /*the background gets removed as it has been overflown by the parent element. To avoid this*/
+}
+
+.navbar li{
+    float: left;
+    list-style: none;               /* Used to remove bullet points in list*/
+    margin: 12px 8px;
+}
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(47, 0, 255);
+    border-radius: 22px;
+}
+
+.navbar li a:hover{
+    color: red;
+    background-color: white;
+}
+
+.searchbox{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+
+.navbar input{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 2px 17px;
+    width: 119px;
+}
