@@ -1,0 +1,27 @@
+h2{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* If p is contained by any li which is contained by div  */
+/* div li p{
+    color: yellow;
+    font-weight: bold;
+    background-color: green;
+} */
+
+/* Selects all <p> elements where the parent is a <div> element OR p is right inside div */
+/* div > p{
+    color: yellow;
+    font-weight: bold;
+    background-color: green;
+} */
+
+/* Selects the first <p> element that is placed immediately after <div> elements */
+/* if p is right after div i.e p is the next sibling of div*/
+/* div + p{
+    color: white;
+    background-color: orangered;
+} */
