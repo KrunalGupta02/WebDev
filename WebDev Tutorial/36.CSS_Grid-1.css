@@ -1,0 +1,20 @@
+.container{
+    display: grid;
+    /* grid-template-columns: 300px 100px 100px; */
+    /* grid-template-columns: 300px auto 100px; */
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: 1fr 4fr 2fr;       /*fr - fractional unit*/
+    grid-template-columns: repeat(3, auto);
+    
+    grid-gap: 2rem;
+    grid: 3rem 2rem;        /* Shorthand Property*/
+
+
+}
+.item{
+    background-color: red;
+    border: 2px solid black;
+    margin: 3px 5px;
+    padding: 12px 5px;
+
+}

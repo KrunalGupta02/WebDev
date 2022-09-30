@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+}
+.card{
+    margin: 23px 12px;
+    padding: 23px 12px;
+    /* border: 2px solid red; */
+    background-color: cadetblue;
+
+    /* box-shadow: offset-x offset-y color; */
+    /* box-shadow: 2px 3px yellow; */
+    /* box-shadow: -5px -4px yellowgreen; */
+
+    /* box-shadow: offset-x offset-y blur-radius color; */
+    /* box-shadow: 2px 3px 10px red; */
+    /* box-shadow: -7px -9px 20px red; */
+
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    /* box-shadow: 3px 3px 4px 8px green; */
+
+    /* box-shadow: 5px 5px 4px 24px rgba(redvalue, greenvalue, bluevalue, alpha); */
+    /* Note:- alpha will show how dark is your color */
+    /* box-shadow: -6px -5px 10px 24px rgba(4, 5, 4, 0.5); */
+
+    box-shadow: inset 8px 9px lightcoral;
+
+    /*Multiple Shadows at same time */
+    box-shadow: 3px 2px red, 6px 5px yellow;
+}
+/* Note:- The spread radius does not work in text shadow. */
+
+.container h2{
+    /* text-shadow: 2px 4px white; */
+    /* text-shadow: 12px 10px 8px white; */
+    /* text-shadow: -12px -10px 8px white; */
+
+    /* Multiple text-shadows */
+    /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+    /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+
+    /* Border around text */
+    color: coral;
+    text-shadow: -1px 0 black, 0px 1px black, 0px -1px black;
+}

@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 80vh;
+    background: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: brown;
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 1s ease-in-out;
+
+}
+.box:hover{
+
+    /* 2-D Transform
+
+    /* transform: rotate(30deg); */                /* Using negative values will rotate the element counter-clockwise.*/
+    /* transform: skew(50deg); */
+    /* transform: scale(1.5); */
+    /* transform: translateX(123px); */
+    /* transform: translateY(123px); */
+    /* transform: translate(123px, 123px); */
+
+    /* The matrix() method combines all the 2D transform methods into one. */
+    /* transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()); */
+    /* transform: matrix(2,0.4,0.4,3,2,5); */
+
+
+    /* 3-D Transform */
+
+    /* transform: rotateX(150deg); */
+    /* transform: rotateY(150deg); */
+    /* transform: rotateZ(90deg); */
+
+    /* transform: scale3d(3,3,5); */
+    transform: rotate3d(20deg,30deg,40deg);
+
+
+}

@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.navigation{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+li{
+    list-style: none;
+    padding: 20px 23px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 3px 230px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 2px solid red; */
+    height: 344px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1{
+    font-size: 2rem;
+}
+p{
+    text-align: center;
+}
+
+/* section::before{   --> The :: before pseudo-element can be used to insert some content before the content of an element.
+    content: "This is a content before section";
+}
+section::after{       --> The ::after pseudo-element can be used to insert some content after the content of an element.
+    content: "This a content after section";
+} */
+
+
+header::before{
+    background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+p::first-line{
+    color: red;
+    font-size: 20px;
+}
+p::first-letter{
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* The ::marker pseudo-element selects the markers of list items. */
+li::marker{
+    color: turquoise;
+    font-size: 33px;
+}
+/* The ::selection pseudo-element matches the portion of an element that is selected by a user. */
+::selection{
+    color: red;
+    background-color: lightseagreen;
+}
+
+
+/* Note:- The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent: */
+

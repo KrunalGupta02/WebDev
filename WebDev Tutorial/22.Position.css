@@ -1,0 +1,44 @@
+.container{
+    border: 2px solid black;
+    background-color: khaki;
+    height: 3444px;
+}
+
+.box{
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    display: inline-block;
+}
+
+/* CSS Position: static(default), relative, absolute, fixed, sticky */
+
+#box3{
+
+    /* realtive: Positions the element relative to its normal position and will leave a gap at its normal position*/
+    position: relative;
+    top: 34px;
+    left: 34px;
+}
+
+#box2{
+
+    /* absolute: Positions the element relative to its first parent position */
+    position: absolute;
+    top: 34px;
+    left: 34px;
+}
+
+#box4{
+    /* fixed: Positions the element relative to the browser window */
+    position: fixed;
+    right: 4px;
+    top: 2px;
+}
+
+#box1{
+    /* sticky: Positions the element relative to the users scroll position */
+    position: sticky;
+    top: 3px;
+}

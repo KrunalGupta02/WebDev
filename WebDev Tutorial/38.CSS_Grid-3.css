@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+.box{
+    border: 2px solid black;
+    background-color: rgb(235, 230, 240);
+    padding: 23px;
+}
+.box:first-child{
+    /* 
+    item1 start on column 1 and end before column 3
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* item1 start on column 1 and span 3 columns */
+    grid-column: 1/ span 3;
+    grid-row: 1/ span 3;
+
+    /* Note:-grid-column : 1/span 2;  can also be written as
+    grid-column : 1/3; */
+}

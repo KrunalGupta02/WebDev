@@ -1,0 +1,72 @@
+.container{
+    border: 2px solid red;
+    height: 544px;
+    width: 100%;
+
+    /* Initialize the container as a flex box */
+    display: flex;
+
+    /* Flex properties for a flex container */
+    /* Note:- Flex properties overwrites when we put properties downside */
+
+    /*flex-direction: row;*/ /*By default*/
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+
+    /* flex-wrap: wrap;*/    /*By default no wrap */
+    /* flex-wrap: wrap-reverse; */
+
+    /* Shorthand for both flex-wrap and flex-direction */
+    /* flex-flow: row-reverse wrap; */
+
+    /* justify-content will justify the content in horizontal direction  */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+
+    /* align-items will justify the content in vertical direction  */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start;*/   /*By default */
+    /* align-items: stretch; */
+
+}
+
+.item{
+    background-color: tomato;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 3px;
+    width: 100px;
+    height: 100px;
+}
+
+#item1{
+    /* Flex properties for a flex item */
+    
+    /* Higher the order, later it shows up in the container  */
+    /* order: 2; */
+
+    /* -ve numbers are invalid in flex-grow properties */
+    /* flex-grow: 2; */
+
+    flex-shrink: 2;
+}
+#item2{
+    /* flex-grow: 3; */
+    /* flex-shrink: 3;   */
+
+    /* When flex-direction is set to row flex-basis will control the width  */
+    /* When flex-direction is set to column flex-basis will control the height  */
+    flex-basis: 160px;
+}
+#item3{
+    /* Shorthand for flex: flex-grow flex-shrink flex-basis  */
+    /* flex: 2 3 260px; */
+
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: center;
+}

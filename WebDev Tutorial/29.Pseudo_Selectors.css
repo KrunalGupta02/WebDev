@@ -1,0 +1,49 @@
+.container {
+  display: block;
+  width: 233px;
+  margin: auto;
+}
+input {
+  display: block;
+}
+input[type="text"] {
+  padding: 30px;
+  border: 2px solid red;
+}
+a[target] {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  color: green;
+}
+a[target='_self'] {
+  font-size: 38px;
+  color: rgb(239, 12, 159);
+}
+input[type='email']{
+    border: 2px solid blueviolet;
+    color: yellow;
+}
+/* This will apply the css for third child */
+li:nth-child(3){
+    color: cyan;
+}
+/* This will apply css in every second i.e even child  */
+/* li:nth-child(2n+0){
+    color: brown;
+} */
+
+/* NOTE:- n will start from 0 only  */
+
+li:nth-child(3n+3){
+    color: burlywood;
+}
+
+/* Odd Elements */ 
+li:nth-child(odd){
+    background-color: chartreuse;
+}
+
+/* Even Elements */ 
+li:nth-child(even){
+    background-color: rosybrown;
+}

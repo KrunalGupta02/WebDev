@@ -1,0 +1,59 @@
+.container {
+  background-color: greenyellow;
+}
+.box {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+  position: relative; /* Used to move the element*/
+
+  /* animation-name: krunal1; */
+  animation-name: krunal2;
+  animation-duration: 8s;
+  animation-iteration-count: 2;
+  /* animation-iteration-count: infinite; */
+
+  /* animation-fill-mode: forwards; */
+  /* animation-fill-mode: alternate; */
+  
+  /* animation-timing-function: ease-in-out; */
+  /* cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function */
+
+  animation-delay: 1s;
+
+  /* animation-direction: alternate; */
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate-reverse; */
+
+  /* Animation Shorthand Property */
+  /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+  animation: krunal 5s ease-out 1s 3 alternate;
+}
+
+/* The keyframes are used to make the animation. */
+@keyframes krunal1 {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 1200px;
+  }
+}
+@keyframes krunal2 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 0px;
+    left: 250px;
+  }
+  75% {
+    top: 250px;
+    left: 250px;
+  }
+  100% {
+    top: 250px;
+    left: 0px;
+  }
+}
