@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;                 /* It is used to add scroll behaviour either auto and smooth */
+    /* -webkit-font-smooting: antialiased; */
+    /* -moz-osx-font-smooting: grayscale; */
+
+}
+
+body{
+    margin: 2rem;
+    background-color: #212123;    
+}
+
+.main{
+    width: 450px;
+}
+
+.carrousel{
+    color: white;
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+    /* scroll-behavior: auto; */
+    /* overscroll-behavior-x: contain; */          /*Used by browser's behavior when the horizontal boundary of a scrolling area is reached. */
+    /* scroll-snap-type: x mandatory; */
+    scrollbar-width: none;
+}
+
+.carroused::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* For coloring of cards  */
+
+.card:nth-child(1){
+    background: linear-gradient(-229deg,#FBD52d,#EF3A7B);
+}
+
+.card:nth-child(2){
+    background: linear-gradient(-229deg,#FF70AF,#5FA8F5);
+}
+
+.card:nth-child(3){
+    background: linear-gradient(-229deg,#0093E9,#80D0C7);
+}
+
+.card:nth-child(4){
+    background: linear-gradient(-229deg,green,greenyellow);
+}
