@@ -40,6 +40,7 @@ body {
 
 /* Middle line of hamburger */
 
+/* > --> Means select all div elements whose parent is hamaburger */
 .hamburger > div {
   position: relative;
   top: 0;
@@ -73,14 +74,17 @@ top is -10px above the middle and bottom is 10px below middle */
 
 .toggler:checked + .hamburger > div {
   background: rgba(0, 0, 0, 0);
+  /* background: purple;*/ /*For reference*/
 }
 
+/* Top Line  */
 .toggler:checked + .hamburger > div::before {
   top: 0;
   transform: rotate(45deg);
   background: black;
 }
 
+/* Bottom Line */
 .toggler:checked + .hamburger > div::after {
   top: 0;
   transform: rotate(135deg);
@@ -98,6 +102,8 @@ top is -10px above the middle and bottom is 10px below middle */
 }
 
 /* If toggler is checked , then increase the width of menu to 30%  */
+
+/* ~ --> Select every element that is preceeded by .toggler:checked */
 .toggler:checked ~ .menu {
   width: 30%;
 }
@@ -144,9 +150,12 @@ top is -10px above the middle and bottom is 10px below middle */
 
 /* 2> Hamburger Menu  */
 
+/* + --> Select the first element .menu__btn that is placed after #menu__toggle:checked */
+
 /* #menu__toggle {
   opacity: 0;
 }
+
 #menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
 }
