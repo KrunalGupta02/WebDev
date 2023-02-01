@@ -1,0 +1,71 @@
+body {
+  background-color: #053a3d;
+}
+
+#burger-div {
+  /* border: 2px solid white; */
+  width: 7%;
+  height: 7vw;
+  position: absolute;
+  margin-right: 0;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  right: 10vw;
+  z-index: 100;
+  top: 9.5vh;
+}
+
+#burger-div span {
+  /* border: 2px solid red; */
+  display: block;
+  position: absolute;
+  height: 1vw;
+  width: 100%;
+  background: #aac6c6;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#burger-div span :nth-child(1) {
+  top: 0;
+}
+
+#burger-div span:nth-child(2),
+#burger-div span:nth-child(3) {
+  top: 25px;
+}
+
+#burger-div span:nth-child(4) {
+  top: 50px;
+}
+
+#burger-div.open {
+  position: fixed;
+}
+
+#burger-div.open span {
+  background: #52e1e2;
+}
+
+#burger-div.open span:nth-child(1) {
+  /* top: 25px;
+  left: 50%; */
+  width: 0%;
+}
+#burger-div.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+#burger-div.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+#burger-div.open span:nth-child(4) {
+  /* No need to add below line of code it works fine  */
+  /* top: 50px;
+  left: 50%; */
+  width: 0%;
+}
