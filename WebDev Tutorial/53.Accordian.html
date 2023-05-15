@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion using CSS</title>
+    <link rel="stylesheet" href="53.Accordion.css">
+</head>
+
+<body>
+    <!-- We use radio btn for the "only one tab can be open" -->
+    <!-- We use checkbox for the possible to open more than one tab at the same time -->
+
+    <div class="accordion">
+
+        <div class="panel-1">
+            <input type="checkbox" name="panel" id="panel-1">
+            <label for="panel-1">Panel 1</label>
+
+            <div class="accordion-content accordion-content-small">
+                <h2 class="accordion-header">Header</h2>
+                <p class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur
+                    error totam corrupti, distinctio ipsum?</p>
+            </div>
+        </div>
+
+        <div class="panel-2">
+            <input type="checkbox" name="panel" id="panel-2">
+            <label for="panel-2">Panel 2</label>
+
+            <div class="accordion-content accordion-content-small">
+                <h2 class="accordion-header">Header</h2>
+                <p class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur
+                    error totam corrupti, distinctio ipsum?</p>
+            </div>
+        </div>
+
+        <div class="panel-3">
+            <input type="checkbox" name="panel" id="panel-3">
+            <label for="panel-3">Panel 3</label>
+
+            <div class="accordion-content accordion-content-large">
+                <h2 class="accordion-header">Header</h2>
+                <p class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur
+                    error totam corrupti, distinctio ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt, asperiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam molestias
+                    obcaecati minima harum earum adipisci tenetur eligendi nesciunt dolore debitis.</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
