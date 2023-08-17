@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Layout using FlexBox</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background: black;
+            color: #fff;
+            display: grid;
+            place-items: center;
+        }
+
+        .flex-container {
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            padding: 1rem;
+
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .name {
+            /* flex-grow, flex-shrink , flex-basis */
+            flex: 1 0 140px;
+        }
+
+        .email {
+            flex: 1 0 120px
+        }
+
+        button {
+            flex: 1 0 60px;
+
+
+            color: white;
+            background-color: #39ff14;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(0.98);
+            transition-duration: 0.5s;
+            background-color: #55fa38;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <input type="text" name="name" class="name" placeholder="name">
+        <input type="email" name="email" class="email" placeholder="email">
+        <button type="button">Submit</button>
+    </div>
+</body>
+
+</html>
