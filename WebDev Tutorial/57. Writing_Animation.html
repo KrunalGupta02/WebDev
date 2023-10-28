@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwriting Animation</title>
+
+    <style>
+        svg {
+            /* it sets the length of a pattern of alternating dashes and the gaps between them. */
+            stroke-dasharray: 2500;
+
+            animation: write 5s infinite;
+        }
+
+        @keyframes write {
+
+            /* defines the location along an SVG path where the dash of a stroke will begin. The higher the number, the further along the path the dashes will begin */
+            0% {
+                stroke-dashoffset: 2500;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this svg can be make using the figma pen  -->
+
+    <svg viewBox="0 0 383 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M68 8C51.6667 73.3333 17.8 209.8 13 233C7.00001 262 -6 113 57 121C120 129 58 192 68 225C78 258 112 234 119 217C126 200 117.954 162 161 162C195 162 225 157 219 149C213 141 207 127.581 186 133C155 141 155 143 137 168C119 193 149 233 178 225C207 217 217 223 254 192C291 161 292 158 282 143C272 128 235 191 237 212C239 233 247 261 289 239C331 217 354 159 348 149C342 139 324 157 312 183C300 209 293 282 269 326C245 370 148 367 148 367C134 368.333 49.8 352.6 73 319C102 277 132 302 219 297C306 292 359 284 375 248"
+            stroke="black" stroke-width="15" stroke-linecap="round" />
+    </svg>
+</body>
+
+</html>
